@@ -9,6 +9,8 @@ import { Link } from "react-scroll"
 import Head from "next/head"
 import { useEffect, useState } from "react"
 import Image from "next/image"
+import LandingPage from "@/components/landingpage"
+import SkillDetail from "@/components/skillDetail"
 
 export default function Home() {
   const images = [
@@ -39,6 +41,9 @@ export default function Home() {
       </Head>
 
       <Layout>
+        {/* new landing page */}
+        <LandingPage />
+        <SkillDetail />
         {/* Hero Section */}
         <section className=" overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full transition-all-duration-1000">
@@ -76,7 +81,7 @@ export default function Home() {
         <Skills />
 
         {/* Projects Section */}
-        <div id="projects">
+        <div id="projects" className="mt-50">
           <Projects />
         </div>
 
