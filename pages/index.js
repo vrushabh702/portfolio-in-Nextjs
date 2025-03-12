@@ -13,6 +13,11 @@ import Aboutus from "@/components/Aboutus"
 import Explore from "@/components/explore"
 import LandingPage from "@/components/Landingpage"
 import SkillDetail from "@/components/SkillDetail"
+import WhyUs from "@/components/WhyUs"
+import OurWork from "@/components/ourWork"
+import Testimonials from "@/components/Testimonials"
+import CTA from "@/components/CTA"
+import FooterNew from "@/components/FooterNew"
 
 export default function Home() {
   const images = [
@@ -48,6 +53,11 @@ export default function Home() {
         <SkillDetail />
         <Aboutus />
         <Explore />
+        <WhyUs />
+        <OurWork />
+        <Testimonials />
+        <CTA />
+        <FooterNew />
         {/* Hero Section */}
         <section className=" overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-full transition-all-duration-1000">
