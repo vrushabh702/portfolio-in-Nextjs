@@ -1,28 +1,38 @@
+import Image from "next/image"
+
 export default function SkillDetail() {
   return (
     <section className="container mx-auto p-8">
       <div className="-mx-4 flex flex-wrap">
-        <div className="w-full px-4 md:w-1/2">
-          <div className="relative">
-            <img
-              src="home/home-1.png"
-              alt="Top Image"
-              className="bg relative z-30 rounded-lg border-4 border-white"
-            />
-            <img
-              src="home/home-2.png"
-              alt="Middle Image"
-              className="absolute top-5 left-5 z-20 h-full w-full rounded-lg border-4 border-white"
-            />
-            <img
-              src="home/home-3.png"
-              alt="Bottom Image"
-              className="absolute top-10 left-10 z-10 h-full w-full rounded-lg border-4 border-white"
-            />
+        <div className="w-full px-4 md:w-1/2 lg:px-8">
+          {/* <div className="flex items-center justify-center min-h-screen bg-gray-100"> */}
+          <div className=" max-w-md px-4">
+            <div className="relative">
+              <Image
+                src="/home/home-2.jpg"
+                alt="Top Image"
+                width={487}
+                height={500}
+                className="relative z-30 rounded-lg border-4 border-white shadow-lg"
+              />
+
+              <img
+                src="/home/home-4.jpg"
+                alt="Middle Image"
+                className="absolute bottom-[20px] right-[20px] z-20  w-[487px]  rounded-lg border-4 border-white shadow-md"
+              />
+
+              <img
+                src="/home/home-5.jpg"
+                alt="Bottom Image"
+                className="absolute bottom-[40px] right-[40px] z-10 w-[487px]   rounded-lg border-4 border-white shadow"
+              />
+            </div>
           </div>
+          {/* </div> */}
         </div>
 
-        <div className="w-full px-4 md:w-1/2">
+        <div className="w-full px-4 md:w-1/2 lg:px-8">
           <div className="mb-4">
             <h2 className="text-2xl text-slate-500">About Us</h2>
           </div>
@@ -43,7 +53,7 @@ export default function SkillDetail() {
           </div>
 
           <div className="mb-6">
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-4">
               <div className="flex items-center rounded-full bg-black px-4 py-2">
                 <span className="mr-2 text-white">✓</span>
                 <span className="text-white">JavaScript</span>

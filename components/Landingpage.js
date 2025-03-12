@@ -1,5 +1,3 @@
-import Image from "next/image"
-
 export default function LandingPage() {
   return (
     <div className="bg-black text-white">
@@ -36,15 +34,13 @@ export default function LandingPage() {
         <div className="w-6/12 p-8">
           <div className="grid grid-cols-12 gap-4 mb-4">
             <div className="col-span-8">
-              <Image
-                src="https://via.placeholder.com/600x400"
+              <div
                 alt=""
                 className="w-full h-64 object-cover rounded-2xl border-2 border-white"
               />
             </div>
             <div className="col-span-4">
-              <Image
-                src="https://via.placeholder.com/300x400"
+              <div
                 alt=""
                 className="w-full h-64 object-cover rounded-2xl border-2 border-white"
               />
@@ -53,19 +49,12 @@ export default function LandingPage() {
 
           <div className="grid grid-cols-12 gap-4 mb-4">
             <div className="col-span-4">
-              <Image
-                src="https://via.placeholder.com/300x400"
+              <div
                 alt=""
                 className="w-full h-64 object-cover rounded-2xl border-2 border-white"
               />
             </div>
-            <div className="col-span-8">
-              <Image
-                src="https://via.placeholder.com/600x400"
-                alt=""
-                className="w-full h-64 object-cover rounded-2xl border-2 border-white"
-              />
-            </div>
+            <div className="col-span-8"></div>
           </div>
 
           <div className="grid grid-cols-12 gap-4 items-center">
